@@ -90,6 +90,10 @@ public class TestBuddhistChronology extends TestCase {
         originalTimeZone = null;
         originalLocale = null;
     }
+    
+    public void failingTest() {
+        assertTrue(false);
+    }
 
     //-----------------------------------------------------------------------
     public void testFactoryUTC() {
