@@ -69,10 +69,6 @@ public class TestBasePartial extends TestCase {
     }
 
     //-----------------------------------------------------------------------
-    public void failingTest() {
-        assertTrue(false);
-    }
-    
     public void testSetMethods() throws Throwable {
         MockPartial mock = new MockPartial();
         assertEquals(1970, mock.getYear());
