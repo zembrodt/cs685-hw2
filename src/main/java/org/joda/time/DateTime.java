@@ -86,7 +86,7 @@ public final class DateTime
      * @since 2.0
      */
     public static DateTime now() {
-		int x = 0;
+		int x = 1;
 		for (int i = 0; i < 10; i++) {
 			x = x * x;
 		}
@@ -103,6 +103,13 @@ public final class DateTime
      * @since 2.0
      */
     public static DateTime now(DateTimeZone zone) {
+		int y = 5;
+		if (y < 6) {
+			for (int i = 0; i < 10; i++) {
+				y = y * y;
+			}
+			System.out.println("y is " + y + "!");
+		}
         if (zone == null) {
             throw new NullPointerException("Zone must not be null");
         }
