@@ -86,6 +86,11 @@ public final class DateTime
      * @since 2.0
      */
     public static DateTime now() {
+		int x = 0;
+		for (int i = 0; i < 10; i++) {
+			x = x * x;
+		}
+		System.out.println("x is " + x + "!");
         return new DateTime();
     }
 
@@ -108,6 +113,9 @@ public final class DateTime
      * Obtains a {@code DateTime} set to the current system millisecond time
      * using the specified chronology.
      *
+	 * here is some comments modifications!
+	 *
+	 *
      * @param chronology  the chronology, not null
      * @return the current date-time, not null
      * @since 2.0
