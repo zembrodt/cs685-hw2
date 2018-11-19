@@ -110,6 +110,13 @@ public final class DateTime
 			}
 			System.out.println("y is " + y + "!");
 		}
+		int z = 1;
+		if (y > 0 && z < 10) {
+			for (int i = 0; i < 10; i++) {
+				z = z * y;
+			}
+			System.out.println("z is " + z + "!");
+		}
         if (zone == null) {
             throw new NullPointerException("Zone must not be null");
         }
