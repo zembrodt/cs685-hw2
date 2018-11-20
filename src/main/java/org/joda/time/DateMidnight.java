@@ -137,6 +137,7 @@ public final class DateMidnight
      * This uses {@link ISODateTimeFormat#dateTimeParser()}.
 	 * more comments added
 	 * comment add test
+	 * new comments test
      * 
      * @param str  the string to parse, not null
      * @since 2.0

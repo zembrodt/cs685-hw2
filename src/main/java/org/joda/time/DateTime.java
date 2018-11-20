@@ -114,9 +114,10 @@ public final class DateTime
 		int z = 1;
 		if (y > 0 && z < 10) {
 			for (int i = 0; i < 10; i++) {
-				z = z * y;
+				z = z * y + 5;
+				y++;
 			}
-			System.out.println("z is " + z + "!");
+			System.out.println("z is " + z + "! And y is now " + y + "!");
 		}
 		int x = 3;
 		if (y > 0 && z > 0 && x < 10) {
