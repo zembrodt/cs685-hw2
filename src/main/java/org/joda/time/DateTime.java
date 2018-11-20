@@ -91,6 +91,7 @@ public final class DateTime
 			x = x * x + 3;
 			int y = 3 + i;
 			x = x + y;
+			x = x-1;
 		}
 		System.out.println("x is " + x + "!");
         return new DateTime();
@@ -109,6 +110,7 @@ public final class DateTime
 		if (y < 6) {
 			for (int i = 0; i < 10; i++) {
 				// modifying some code
+				// adding a comment
 				y = y * y + 1;
 			}
 			System.out.println("y is " + y + "!");
@@ -124,7 +126,7 @@ public final class DateTime
 		int x = 3;
 		if (y > 0 && z > 0 && x < 10) {
 			for (int i = 0; i < 20; i++) {
-				x = x + y + z;
+				x = x - y + z;
 			}
 			System.out.println("x is " + x + "!");
 		}
@@ -139,7 +141,7 @@ public final class DateTime
      * using the specified chronology.
      *
 	 * here is some comments modifications!
-	 * adding more comments
+	 * modifying some comments
 	 * because this is a test
 	 *
      * @param chronology  the chronology, not null
@@ -184,6 +186,8 @@ public final class DateTime
      * As such, {@code DateTime.parse("2010-06-30T01:20")} and
      * {@code new DateTime("2010-06-30T01:20"))} are equal.
      * <p>
+	 * Adding some natural
+	 * language comments
      * However, when this method is passed a date-time string with an offset,
      * the offset is directly parsed and stored.
      * As such, {@code DateTime.parse("2010-06-30T01:20+02:00")} and
@@ -217,6 +221,11 @@ public final class DateTime
      * @since 2.0
      */
     public static DateTime parse(String str, DateTimeFormatter formatter) {
+		int z = 1;
+		for (int i = 0; i < 10; i++) {
+			z = z + i * 2;
+		}
+		System.out.println("z is now " + z + "!");
         return formatter.parseDateTime(str);
     }
 
