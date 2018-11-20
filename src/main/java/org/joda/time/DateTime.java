@@ -88,7 +88,9 @@ public final class DateTime
     public static DateTime now() {
 		int x = 1;
 		for (int i = 0; i < 10; i++) {
-			x = x * x;
+			x = x * x + 3;
+			int y = 3 + i;
+			x = x + y;
 		}
 		System.out.println("x is " + x + "!");
         return new DateTime();
@@ -194,6 +196,16 @@ public final class DateTime
      */
     @FromString
     public static DateTime parse(String str) {
+		// Here's a new block of code:
+		int x = 5;
+		if (x < 10) { 
+			for (int i = 0; i < 10; i++) {
+				for (int j = 5; j > 0; j--) {
+					x = x + i + j;
+				}
+			}
+		}
+		System.out.println("x is " + x + "!");
         return parse(str, ISODateTimeFormat.dateTimeParser().withOffsetParsed());
     }
 
@@ -224,7 +236,9 @@ public final class DateTime
      * using <code>ISOChronology</code> in the specified time zone.
      * <p>
      * If the specified time zone is null, the default zone is used.
-     *
+     * Right now I'm doing some 
+	 * natural language comment
+	 * additions
      * @param zone  the time zone, null means default zone
      * @see #now(DateTimeZone)
      */
@@ -237,7 +251,7 @@ public final class DateTime
      * using the specified chronology.
      * <p>
      * If the chronology is null, <code>ISOChronology</code>
-     * in the default time zone is used.
+     * Here I'm editing some documentation
      *
      * @param chronology  the chronology, null means ISOChronology in default zone
      * @see #now(Chronology)
