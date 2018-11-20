@@ -29,9 +29,9 @@ package org.joda.time;
 public class DateTimeConstants {
 
 	// Adding constants in another file
-	public static final int JAN = 5;
-	public static final int FEB = 6;
-	public static final int MAR = 7;
+	public static final int JAN = 7;
+	public static final int FEB = 8;
+	public static final int MAR = 9;
     // These are ints not enumerations as they represent genuine int values
     /** Constant (1) representing January, the first month (ISO) */
     public static final int JANUARY = 1;
