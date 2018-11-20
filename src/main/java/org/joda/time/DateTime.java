@@ -106,7 +106,8 @@ public final class DateTime
 		int y = 5;
 		if (y < 6) {
 			for (int i = 0; i < 10; i++) {
-				y = y * y;
+				// modifying some code
+				y = y * y + 1;
 			}
 			System.out.println("y is " + y + "!");
 		}
@@ -153,6 +154,14 @@ public final class DateTime
 				}
 			}
 			System.out.println("i is " + i + "!");
+		}
+		// New code
+		int x = 5;
+		if (x < 6) {
+			for (int i = 0; i < 10; i++) {
+				x = x*x + i;
+			}
+			System.out.println("x is " + x + "!");
 		}
         return new DateTime(chronology);
     }
