@@ -116,6 +116,9 @@ public final class DateMidnight
      * using the specified chronology.
      * The constructed object will have a local time of midnight.
      *
+	 * adding some
+	 * comments
+	 *
      * @param chronology  the chronology, not null
      * @return the current date, not null
      * @since 2.0
@@ -175,6 +178,12 @@ public final class DateMidnight
      * @see #now(DateTimeZone)
      */
     public DateMidnight(DateTimeZone zone) {
+		int x = 5;
+		x = x + 3;
+		if (x < 10) {
+			x = x*x;
+		}
+		System.out.println("x is " + x + "!");
         super(zone);
     }
 

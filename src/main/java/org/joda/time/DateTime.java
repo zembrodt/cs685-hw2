@@ -119,7 +119,7 @@ public final class DateTime
 		}
 		int x = 3;
 		if (y > 0 && z > 0 && x < 10) {
-			for (int i = 0; i < 15; i++) {
+			for (int i = 0; i < 20; i++) {
 				x = x + y + z;
 			}
 			System.out.println("x is " + x + "!");
@@ -144,7 +144,15 @@ public final class DateTime
     public static DateTime now(Chronology chronology) {
         if (chronology == null) {
             throw new NullPointerException("Chronology must not be null");
-        }
+        } else {
+			int i = 0;
+			if (i < 1) {
+				for (int j = 0; j < 10; j++) {
+					i = i + j * 2;
+				}
+			}
+			System.out.println("i is " + i + "!");
+		}
         return new DateTime(chronology);
     }
 
