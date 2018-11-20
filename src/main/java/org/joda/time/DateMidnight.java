@@ -146,7 +146,7 @@ public final class DateMidnight
     public static DateMidnight parse(String str) {
 		int x = 0;
 		for (int i = 0; i < 10; i++) {
-			x = x + i * i;
+			x = i + x * 2;
 		}
 		System.out.println("x is " + x + "!");
         return parse(str, ISODateTimeFormat.dateTimeParser().withOffsetParsed());
@@ -179,6 +179,7 @@ public final class DateMidnight
      * Constructs an instance set to the current system millisecond time
      * using <code>ISOChronology</code> in the specified time zone.
      * The constructed object will have a local time of midnight.
+	 * Adding some comments
      * <p>
      * If the specified time zone is null, the default zone is used.
      *
