@@ -135,12 +135,18 @@ public final class DateMidnight
      * Parses a {@code DateMidnight} from the specified string.
      * <p>
      * This uses {@link ISODateTimeFormat#dateTimeParser()}.
+	 * more comments added
      * 
      * @param str  the string to parse, not null
      * @since 2.0
      */
     @FromString
     public static DateMidnight parse(String str) {
+		int x = 0;
+		for (int i = 0; i < 10; i++) {
+			x = x + i * i;
+		}
+		System.out.println("x is " + x + "!");
         return parse(str, ISODateTimeFormat.dateTimeParser().withOffsetParsed());
     }
 
@@ -178,12 +184,6 @@ public final class DateMidnight
      * @see #now(DateTimeZone)
      */
     public DateMidnight(DateTimeZone zone) {
-		int x = 5;
-		x = x + 3;
-		if (x < 10) {
-			x = x*x;
-		}
-		System.out.println("x is " + x + "!");
         super(zone);
     }
 

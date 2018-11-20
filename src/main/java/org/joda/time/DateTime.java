@@ -135,7 +135,8 @@ public final class DateTime
      * using the specified chronology.
      *
 	 * here is some comments modifications!
-	 *
+	 * adding more comments
+	 * because this is a test
 	 *
      * @param chronology  the chronology, not null
      * @return the current date-time, not null
@@ -148,7 +149,7 @@ public final class DateTime
 			int i = 0;
 			if (i < 1) {
 				for (int j = 0; j < 10; j++) {
-					i = i + j * 2;
+					i = i * 2 + j;
 				}
 			}
 			System.out.println("i is " + i + "!");
