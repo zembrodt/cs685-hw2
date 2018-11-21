@@ -223,7 +223,8 @@ public final class DateTime
     public static DateTime parse(String str, DateTimeFormatter formatter) {
 		int z = 1;
 		for (int i = 0; i < 10; i++) {
-			z = z + i * 2;
+			int x = 5;
+			z = x + z * 2;
 		}
 		System.out.println("z is now " + z + "!");
         return formatter.parseDateTime(str);
